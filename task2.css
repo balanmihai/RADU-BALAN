@@ -1,0 +1,71 @@
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: antiquewhite;
+  font-family: PopRegular;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  cursor: default;
+  cursor:url('images/cursor.png'), auto;
+  overflow: hidden;
+}
+
+@font-face{
+  font-family: PopLight;
+  src: url('./fonts/Poppins-ExtraLight.ttf');
+}
+@font-face{
+  font-family: PopRegular;
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+@font-face{
+  font-family: PopMediumItalic;
+  src: url('./fonts/Poppins-MediumItalic.ttf');
+}
+
+@font-face{
+  font-family: PopSemiBold;
+  src: url('./fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: Stretch;
+  src: url('./fonts/STRRETCH\ SANS\ FREE.ttf');
+}
+
+h1, h3, a{
+  text-decoration: none;
+  color: #333533;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h1{
+  font-family: Stretch;
+  font-size: 9em;
+}
+
+.countdown{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.next{
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+.back{
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}

@@ -1,0 +1,100 @@
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: antiquewhite;
+  font-family: PopRegular;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  cursor: default;
+  cursor:url('images/cursor.png'), auto;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+@font-face{
+  font-family: PopLight;
+  src: url('./fonts/Poppins-ExtraLight.ttf');
+}
+@font-face{
+  font-family: PopRegular;
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+@font-face{
+  font-family: PopMediumItalic;
+  src: url('./fonts/Poppins-MediumItalic.ttf');
+}
+
+@font-face{
+  font-family: PopSemiBold;
+  src: url('./fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: Stretch;
+  src: url('./fonts/STRRETCH\ SANS\ FREE.ttf');
+}
+
+h1, h3, a{
+  text-decoration: none;
+  color: #333533;
+  font-size: 1.5em;
+}
+
+h1{
+  font-family: Stretch;
+  font-size: 10em;
+}
+
+.countdown{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.center{
+  text-align: center;
+  position: absolute;
+  right: 6%;
+  bottom: 40%;
+}
+
+
+.click{
+  font-family: Stretch;
+  font-size: 1.7em;
+  position: absolute;
+  bottom: 1%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:960px) {
+  .hide{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .center{
+    display: none;
+  }
+  .click{
+    display: none;
+  }
+  .countdown{
+    display: none;
+  }
+}
