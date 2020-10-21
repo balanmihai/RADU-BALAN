@@ -13,7 +13,7 @@ body{
 html{
   scroll-behavior: smooth;
   cursor: default;
-  cursor:url('images/cursor.png'), auto;
+  cursor:url('./favicon.png'), auto;
   overflow: hidden;
 }
 

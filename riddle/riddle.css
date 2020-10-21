@@ -1,0 +1,34 @@
+body{
+  background: antiquewhite;
+}
+
+.welcome{
+ 	font: bold 55px Courier;
+	text-align: center;
+  padding: 0;
+}
+.answ{
+  font:24px Courier;
+}
+.input{
+  font:24px Courier;
+  padding:2px;
+}
+.ent{
+  font:bold 24px Courier;
+  color:white;
+  padding:5px;
+  background: green;
+}
+.clu{
+  font:bold 24px Courier;
+  color:white;
+  padding:5px;
+  background: red;
+}
+.info{
+  font:bold 24px Courier;
+  color:white;
+  padding:5px;
+  background: blue;
+}

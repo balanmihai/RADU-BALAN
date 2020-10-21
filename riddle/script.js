@@ -7,7 +7,7 @@ var told=0;
 timeup=0;
 var answered=0;
 var clue = ["Check the punctuation!","Solve b first.","Think of it as two seperate houses.","Think of how many holes a shirt normally has.","It says they're $1.00 APART not that one of them is $1.00.","The answer has six letters.","one digit.","seven letters.", "two digits."];
-var riddles = [0,"A cat has 3 kittens: One, Two, and Three. What is the cat's name."," ","A man buys a house for 1 million dollars. He sells the house for 1.1 million dollars. Then, he buys it back for 1.2 million dollars. He sells it again for 1.3 million dollars. How much money did he earn/lose? Answer in millions.","How many holes does this t-shirt have?", "A bat and a baseball cost $1.10. If the bat costs one more dollar than the baseball, how much does the bat cost? Answer like this: $_._ _","The one who makes it always sells it. \n The one who buys it never uses it.\n The one who uses it never knows he's using it.\n It is a ______."]
+var riddles = [0,"A cat has 3 kittens: One, Two, and Three. What is the cat's name."," ","A man buys a house for 1 million dollars. He sells the house for 1.1 million dollars. Then, he buys it back for 1.2 million dollars. He sells it again for 1.3 million dollars. How much money did he earn/lose? Answer in millions.","How many holes does this t-shirt have?", "A bat and a baseball cost $1.10. If the bat costs one more dollar than the baseball, how much does the bat cost? Answer like this: $_._ _","Now look at the title!"]
 var remclu = 3;
 var clueUsed = 0;
 var answer = ["WHAT",74658,0.2,8,1.05,"COFFIN"];
@@ -24,8 +24,8 @@ var riddle5 = new Image();
 riddle5.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJ-qwl1YOSeCwEWm6C506UxXoXx1nsRCK9kL9hD9z6vqU7xz5"
 var riddle6 = new Image();
 riddle6.src="https://piskel-imgstore-b.appspot.com/img/a23be60c-5e2d-11e8-b4c5-83130ba8dcae.gif"
-// var win=new Image();
-// win.src="http://www.handymanserviceomahane.com/images/1051038_0.jpg"
+var win=new Image();
+win.src="http://www.handymanserviceomahane.com/images/1051038_0.jpg"
 function addsec(){
   if(min==30&&told==0){
     told=1;
@@ -113,6 +113,7 @@ document.getElementById("clueMessage").innerHTML="";
     canvas.width=650;
     canvas.height=400
     ctx.drawImage(riddle2, 0,0, 650, 400);
+    document.getElementById("title").innerHTML="plmibngrt"+roomNum;
   }
   if(roomNum==3){
     canvas.width=300;
@@ -133,6 +134,7 @@ document.getElementById("clueMessage").innerHTML="";
     canvas.width=300;
     canvas.height=300
     ctx.drawImage(riddle6, 0,0, 300, 300);
+    document.getElementById("title").innerHTML="Please, insert this as an url: https://www.youtube.com/watch?v=iat1qZ7Hq44&ab_channel=MihaiB%C4%83lan";
     
   }
   document.getElementById("riddle").innerHTML=riddles[roomNum];

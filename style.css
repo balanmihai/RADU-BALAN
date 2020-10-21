@@ -10,10 +10,11 @@ body{
 }
 
 
+
 html{
   scroll-behavior: smooth;
   cursor: default;
-  cursor:url('images/cursor.png'), auto;
+  cursor:url('./favicon.png'), auto;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -46,6 +47,10 @@ h1, h3, a{
   text-decoration: none;
   color: #333533;
   font-size: 1.5em;
+}
+
+h1:hover, h3:hover, a:hover{
+  color: cadetblue;
 }
 
 h1{

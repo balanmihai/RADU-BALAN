@@ -13,7 +13,7 @@ body{
 html{
   scroll-behavior: smooth;
   cursor: default;
-  cursor:url('images/cursor.png'), auto;
+  cursor:url('./favicon.png'), auto;
   overflow: hidden;
 }
 
@@ -50,6 +50,9 @@ h1, h3, a{
 h1{
   font-family: Stretch;
   font-size: 9em;
+}
+h1:hover, h3:hover, a:hover{
+  color: cadetblue;
 }
 
 .countdown{
