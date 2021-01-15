@@ -1,105 +1,218 @@
-*,*::before,*::after{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body{
-  background: antiquewhite;
-  font-family: PopRegular;
-}
-
-
-
-html{
-  scroll-behavior: smooth;
-  cursor: default;
-  cursor:url('./favicon.png'), auto;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-
-@font-face{
-  font-family: PopLight;
-  src: url('./fonts/Poppins-ExtraLight.ttf');
-}
-@font-face{
-  font-family: PopRegular;
-  src: url('./fonts/Poppins-Regular.ttf');
-}
-@font-face{
-  font-family: PopMediumItalic;
-  src: url('./fonts/Poppins-MediumItalic.ttf');
-}
-
-@font-face{
-  font-family: PopSemiBold;
-  src: url('./fonts/Poppins-SemiBold.ttf');
-}
-
-@font-face{
-  font-family: Stretch;
-  src: url('./fonts/STRRETCH\ SANS\ FREE.ttf');
-}
-
-h1, h3, a{
   text-decoration: none;
-  color: #333533;
-  font-size: 1.5em;
 }
 
-h1:hover, h3:hover, a:hover{
-  color: cadetblue;
+:root {
+  --green: rgb(94, 255, 0);
+  --black: rgb(22, 18, 18);
+  --grey: rgb(182, 182, 182);
 }
 
-h1{
-  font-family: Stretch;
-  font-size: 10em;
-}
-
-.countdown{
-  position: absolute;
-  top: 1%;
-  right: 1%;
-}
-
-.center{
-  text-align: center;
-  position: absolute;
-  right: 6%;
-  bottom: 40%;
-}
-
-
-.click{
-  font-family: Stretch;
-  font-size: 1.7em;
-  position: absolute;
-  bottom: 1%;
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.hide{
+::-webkit-scrollbar {
   display: none;
 }
 
-@media screen and (max-width:960px) {
-  .hide{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
+html {
+  scroll-behavior: smooth;
+  background: var(--black);
+}
 
-  .center{
-    display: none;
-  }
-  .click{
-    display: none;
-  }
-  .countdown{
-    display: none;
-  }
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--black);
+}
+
+a,
+p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 2.5em;
+}
+
+/* LANDING */
+.landing {
+  height: 100vh;
+  background: var(--grey);
+  display: grid;
+  grid-template-columns: 4vw 12fr 5fr 4vw;
+  /* clip-path: polygon(0 0, 100% 0, 100% 81%, 0 95%); */
+}
+
+.landing svg {
+  position: absolute;
+  grid-column: 1/5;
+  bottom: -7vh;
+}
+
+nav {
+  padding-top: 2vh;
+  display: flex;
+  grid-column: 2/4;
+  justify-content: space-between;
+}
+.link {
+  padding-top: 4vh;
+}
+
+.leftlanding {
+  grid-column: 2/3;
+  padding-top: 10vh;
+}
+
+.rightlanding {
+  grid-column: 3/4;
+  padding-bottom: 10vh;
+}
+
+button {
+  margin-top: 2vh;
+  background: var(--green);
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  height: 60px;
+  width: 150px;
+  font-size: 15px;
+  border: 4px solid var(--black);
+}
+
+button:hover {
+  background: var(--grey); /* Green */
+  color: white;
+}
+
+/* ABOUT */
+.about {
+  height: 100vh;
+  background: var(--black);
+}
+
+.about h1,
+.about h3 {
+  color: var(--grey);
+}
+
+.rightabout h1 {
+  padding-top: 5vh;
+  color: var(--green);
+  font-size: 5em;
+}
+
+.rightabout {
+  padding-right: 4vw;
+  text-align: right;
+  padding-bottom: 20vh;
+}
+
+.leftabout {
+  padding-left: 4vw;
+  text-align: left;
+  position: absolute;
+}
+
+/* CONTACT */
+.contact {
+  height: 100vh;
+  background: var(--grey);
+  display: grid;
+  grid-column: 4vw 1fr 4vw;
+}
+
+.members p {
+  font-size: 1.2em;
+}
+
+.members h3 {
+  font-size: 1.6em;
+}
+
+.contact svg {
+  grid-column: 1/8;
+}
+.members {
+  grid-column: 2/7;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 25vh;
+}
+
+.members img {
+  height: 250px;
+  border-radius: 8px;
+  border: 4px solid var(--black);
+}
+
+.member1 {
+  grid-column: 2/3;
+  height: 35vh;
+}
+
+.member2 {
+  grid-column: 3/4;
+  height: 35vh;
+}
+
+.member3 {
+  grid-column: 4/5;
+  height: 35vh;
+}
+
+.member4 {
+  grid-column: 5/6;
+  height: 35vh;
+}
+
+.member1,
+.member2,
+.member3,
+.member4 {
+  transition: 0.4s;
+}
+
+.member1:hover,
+.member2:hover,
+.member3:hover,
+.member4:hover {
+  transform: scale(1.1);
+}
+
+.info {
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2/7;
+}
+
+/* IMAGES */
+.logo {
+  height: 150px;
+  width: auto;
+  transition-duration: 0.4s;
+}
+
+.google {
+  padding-top: 3vh;
+  height: 100px;
+  width: auto;
+}
+.phone {
+  height: 500px;
+  width: auto;
+  transition: 0.4s;
+}
+
+.phone:hover {
+  transform: scale(1.1);
 }
